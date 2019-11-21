@@ -14,7 +14,6 @@ const ResultScreen = () => {
 
     const FlatListItemSeparator = () => {
         return (
-            //Item Separator
             <View style={{ height: 0.5, width: '100%', backgroundColor: 'black' }} />
         );
     };
@@ -39,16 +38,16 @@ const ResultScreen = () => {
                     <>
                         <TouchableWithoutFeedback onPress={() => useSelected(index === selected ? -1 : index)}>
                             <View style={styles.header}>
-                                <Text style={styles.textRound}>Rodada {index}</Text>
+                                <Text style={styles.textRound}>Rodada {index+1}</Text>
                                 <Text style={styles.textDetail}>Detalhes</Text>
                             </View>
                         </TouchableWithoutFeedback>
                         {index === selected ? (
                             <View style={styles.detailContainer}>
                                 <Text><Text style={{ fontWeight: 'bold' }}>Tempo de preparo</Text>: {item.execucao} ms</Text>
-                                <Text><Text style={{ fontWeight: 'bold' }}> Tempo de execução:</Text> {item.preparo} ms</Text>
-                                <Text><Text style={{ fontWeight: 'bold' }}> Tentativas:</Text> {item.tentativas}</Text>
-                                <Text><Text style={{ fontWeight: 'bold' }}> Pontos:</Text> {item.pontos}</Text>
+                                <Text><Text style={{ fontWeight: 'bold' }}>Tempo de execução:</Text> {item.preparo} ms</Text>
+                                <Text><Text style={{ fontWeight: 'bold' }}>Tentativas:</Text> {item.tentativas}</Text>
+                                <Text><Text style={{ fontWeight: 'bold' }}>Pontos:</Text> {item.pontos}</Text>
                             </View>
                         ) : (<></>)}
                     </>
