@@ -12,7 +12,7 @@ const SendButton = (props) =>
 const styles=StyleSheet.create({
     buttonContainer:{
         alignSelf:'center',
-        backgroundColor:'blue',
+        backgroundColor:'#0033cc',
         flexDirection:'row',
         justifyContent:'center',
         alignItems:"center",

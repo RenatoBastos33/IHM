@@ -11,7 +11,7 @@ const HomeButton = (props) =>
 
 const styles=StyleSheet.create({
     buttonContainer:{
-        backgroundColor:'blue',
+        backgroundColor:'#0033cc',
         flexDirection:'row',
         justifyContent:'center',
         alignItems:"center",
