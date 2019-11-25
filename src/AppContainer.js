@@ -4,6 +4,7 @@ import Home from './screens/HomeScreen'
 import PatientRegister from './screens/PatientRegister';
 import StartScreen from './screens/StartScreen';
 import ResultScreen from './screens/ResultScreen';
+import GameSreen from './screens/GameScreen';
 
 
 const AppNavigator = createStackNavigator({
@@ -16,7 +17,6 @@ const AppNavigator = createStackNavigator({
           backgroundColor: '#0033cc',
         },
       }
-
     },
     PatientRegister: {
       screen: PatientRegister,
@@ -47,6 +47,9 @@ const AppNavigator = createStackNavigator({
           backgroundColor: '#0033cc',
         },
       }
+    },
+    Game:{
+      screen:GameSreen
     }
 
   });

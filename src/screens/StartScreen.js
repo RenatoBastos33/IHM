@@ -17,7 +17,7 @@ const StartScreen = () => {
                 </View>
             </View>
             <View style={styles.buttonContainer}>
-                <HomeButton text={'Iniciar'} onPress={() => navigate('Result')}></HomeButton>
+                <HomeButton text={'Iniciar'} onPress={() => navigate('Game')}></HomeButton>
             </View>
         </View>
     )
